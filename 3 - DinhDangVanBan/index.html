@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Định dạng văn bản</title>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 8rem 15rem
+            }
+            h1 {
+                color: forestgreen;
+                text-align: center;
+            }
+            .italic {
+                font-style: italic;
+            }
+            .subject {
+                font-weight: bold;
+                text-decoration: underline;
+            }
+            .formula {
+                color: red;
+                font-style: normal;
+            }
+            pre code {
+                color: mediumblue;
+                background-color: #eee;
+                line-height: 2rem;
+                display: block;
+                padding: 0rem;
+            }
+        </style>
+    </head>
+    <h1>Định dạng văn bản</h1>
+    <p>
+        <span class="subject">Hóa học:</span>
+        <span class="italic">
+            Nước: <span class="formula">H<sub>2</sub>O</span> 
+            Axit Sunfuric: <span class="formula">H<sub>2</sub>SO<sub>4</sub></span>
+        </span>
+    </p>
+    <p>
+        <span class="subject">Toán học:</span>
+        <span class="italic">
+            Phương trình bậc 2: <span class="formula">ax<sup>2</sup> + bx + c = 0</span> 
+        </span>
+    </p>
+    <p>
+        <span class="subject">Tin học:</span>
+        <span class="italic">Vòng lặp for:</span>
+        <pre>
+        <code>
+            int tong = 0;
+            for(int i = 1; i <= 10; i++)
+            tong += i; 
+            printf("Tong cac so tu 1 => 10 la: %d\n",tong);
+        </code>
+        </pre>
+    </p>
+</html>
