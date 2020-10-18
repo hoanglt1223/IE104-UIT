@@ -1,0 +1,36 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header {
+    color: #FF0099;
+    background-color: #FFCCFF;
+    text-align: center;
+    padding: 0.1rem
+}
+
+article {
+    font-style: italic;
+    text-align: center;
+    background-color: #FFFFCC;
+    margin-top: 0.5rem;
+    padding: 0.1rem
+}
+
+hr {
+    width: 300;
+    color: #999999
+}
+
+p.p1 {
+    color: #0000FF
+}
+
+p.p2 {
+    color: #990099
+}
+
+p.p3 {
+    color: #009900;
+    padding-top: 10px;
+}

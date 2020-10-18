@@ -1,0 +1,40 @@
+.imgRight {
+    float: right;
+    width: 80px;
+    height: 80px;
+}
+
+.right {
+    text-align: right;
+    align-content: right;
+}
+
+.right h1 {
+    color: white;
+    background-color: lime;
+}
+
+.floatLeft {
+    float: left;
+    padding-right: 20px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.title {
+    border: #00FF00 double;
+    text-transform: capitalize;
+    text-align: center;
+    color: #ff6600;
+}
+
+.leftItem {
+    width: calc(100% - 120px);
+    display: inline-block;
+}
+
+.row {
+    width: 100%;
+}
