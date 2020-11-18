@@ -1,0 +1,43 @@
+body {
+	background-color: #306491;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	text-align: center;
+	color: #306491;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 75%;
+	margin: auto;
+	background-color: white;
+	padding-bottom: 3rem;
+}
+
+.logo {
+	padding-bottom: 2.5rem
+}
+
+.banner {
+	margin-bottom: 2.5rem
+}
+
+.row {
+	display: table-cell;
+	align-content: center;
+	padding: 2rem 0 1rem 2rem;
+	margin: auto
+}
+
+.footer .row {
+	display: table-cell;
+	align-content: center;
+	padding: 2rem 4rem 0 4rem;
+	margin: auto
+}
+
+.footer {
+	font-family: Courier, monospace !important;
+	color: black;
+}
