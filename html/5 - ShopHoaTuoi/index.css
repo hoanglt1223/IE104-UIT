@@ -1,0 +1,61 @@
+@font-face {
+  font-family: UTMWeddingKT;
+  src: url("fonts/UTM Wedding K&T.ttf") format("truetype");
+}
+
+html {
+  height: 100%;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: url(hinh/nen-hoa-hong.jpg);
+  background-size: contain;
+  background-size: 68%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: UTMWeddingKT;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 1.5rem deeppink, 2px 2px 0 deeppink;
+}
+
+main {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  max-width: 55%;
+}
+
+img {
+  float: left;
+  height: 18em;
+}
+
+.highlighted {
+  background-color: deeppink;
+  color: white;
+  font-weight: bold;
+}
+
+.flower {
+  list-style-image: url(hinh/bullet-hoa-tim.png);
+}
+
+.dot {
+  list-style-image: url(hinh/bullet-tron-hong.png);
+}
+
+.copyright {
+  color: purple;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: deeppink;
+}
