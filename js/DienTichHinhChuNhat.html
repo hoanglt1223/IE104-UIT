@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Diện tích hình chữ nhật</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function tinh(dai, rong) {
+            var result = dai * rong * 1
+            document.getElementById("results").value = result
+        }
+    </script>
+    <label>Diện tích hình chữ nhật</title>
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label>Chiều dài:</label>
+                    <input type="text" name="dai" />
+                </td>
+            </td>
+            <tr>
+                <td>
+                    <label>Chiều rộng:</label>
+                    <input type="text" name="rong" />
+                </td>
+            </td>
+            <tr>
+                <td>
+                    <label>Diện Tích:</label>
+                    <input id="results" readonly />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="btIn" name="In" value="Tính" onclick="tinh(dai.value, rong.value)" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
