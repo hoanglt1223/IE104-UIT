@@ -13,7 +13,7 @@ body {
   margin-top: 10%;
 }
 
-.subtitle {
+.tittle {
   background-color: #FFCCFF;
 }
 
@@ -25,7 +25,7 @@ body {
   padding: 1.5rem 0.5rem 0.5rem 0
 }
 
-.b2 {
+.tittle2 {
   width: 75%;
   text-align: center;
   color: red;
@@ -52,14 +52,14 @@ ol li {
   color: #FFCCFF;
 }
 
-.cell{
+.col{
   color: #ff0000;
   vertical-align: top;
   font-size: 18px;
   font-weight: bold
 }
 
-.bullet-square{
+.bs{
   list-style: square;
 }
 

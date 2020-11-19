@@ -10,7 +10,7 @@
         function getNumberOfDays(month, year) {
             var isLeap = ((year % 4) == 0 && ((year % 100) != 0 || (year % 400) == 0))
             var day = [31, (isLeap ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-            var result = `Tháng ${month} năm ${year} có ${day[parseInt(month-1)]} ngày`
+            var result = `Tháng ${month} năm ${year} có ${day[parseInt(month - 1)]} ngày`
             document.getElementById("results").innerHTML = result
         }
     </script>

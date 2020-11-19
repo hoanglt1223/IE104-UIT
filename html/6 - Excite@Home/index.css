@@ -31,7 +31,7 @@ span {
   text-decoration: underline;
 }
 
-p.sub {
+p.foot {
   color: gray;
   margin-top: 10rem;
   padding-bottom: 2rem;
@@ -39,7 +39,7 @@ p.sub {
   text-align: justify;
 }
 
-.sub span {
+.foot span {
   color: red;
   font-weight: normal;
   text-decoration: underline;

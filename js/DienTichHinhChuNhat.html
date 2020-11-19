@@ -13,33 +13,33 @@
         }
     </script>
     <label>Diện tích hình chữ nhật</title>
-    <form>
-        <table>
-            <tr>
-                <td>
-                    <label>Chiều dài:</label>
-                    <input type="text" name="dai" />
-                </td>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <label>Chiều dài:</label>
+    <input type="text" name="dai" />
+    </td>
+    </td>
+    <tr>
+        <td>
+            <label>Chiều rộng:</label>
+            <input type="text" name="rong" />
+        </td>
+        </td>
+        <tr>
+            <td>
+                <label>Diện Tích:</label>
+                <input id="results" readonly />
             </td>
-            <tr>
-                <td>
-                    <label>Chiều rộng:</label>
-                    <input type="text" name="rong" />
-                </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" name="btIn" name="In" value="Tính" onclick="tinh(dai.value, rong.value)" />
             </td>
-            <tr>
-                <td>
-                    <label>Diện Tích:</label>
-                    <input id="results" readonly />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" name="btIn" name="In" value="Tính" onclick="tinh(dai.value, rong.value)" />
-                </td>
-            </tr>
+        </tr>
         </table>
-    </form>
+        </form>
 </body>
 
 </html>

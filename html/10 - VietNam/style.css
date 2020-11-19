@@ -7,8 +7,8 @@ body {
 }
 
 h1 {
-    color: red; 
-    text-align: center; 
+    color: red;
+    text-align: center;
     margin: 2rem;
 }
 
@@ -21,19 +21,19 @@ p.no-background {
 }
 
 header {
-    color: white; 
+    color: white;
     font-weight: bold;
     font-size: 1.5rem;
-    background-color: red; 
-    padding: 0.5rem; 
+    background-color: red;
+    padding: 0.5rem;
 }
 
 header.hue {
-    background-color: rebeccapurple; 
+    background-color: rebeccapurple;
 }
 
 header.hcm {
-    background-color: deeppink; 
+    background-color: deeppink;
 }
 
 .go-top {

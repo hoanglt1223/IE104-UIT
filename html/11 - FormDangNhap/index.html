@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="index.css">
-	<title>Form Đăng nhập</title>
-	<script>
-		function sayHi() {
-			var name = document.getElementById('name').value;
-			greeting.innerHTML = 'Chào bạn <b>' + name + '</b>';
-		}
-	</script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Form Đăng nhập</title>
+    <script>
+        function sayHi() {
+            var name = document.getElementById('name').value;
+            greeting.innerHTML = 'Chào bạn <b>' + name + '</b>';
+        }
+    </script>
 </head>
+
 <body>
-	<div id="login-box">
-		<h1>From đăng nhập</h1>
-		<form>
-			<table>
-				<tr>
-					<td align="right">Tên người dùng: </td>
-					<td >
-						<input type="text" id="name" autofocus required class="textbox" maxlength="25">
-					</td>
-				</tr>
-				<tr>
-					<td align="right">Mật khẩu: </td>
-					<td>
-						<input type="password" id="password" autofocus required class="textbox"  maxlength="25">
-					</td>
-				</tr>
-			</table>
-			<section id="submit">
-				<input type="button" class="button" onclick="sayHi()" value="Đăng nhập">
-				<p id="greeting"></p>
-			</section>
-		</form>
-	</div>
+    <div id="login-box">
+        <h1>From đăng nhập</h1>
+        <form>
+            <table>
+                <tr>
+                    <td align="right">Tên người dùng: </td>
+                    <td>
+                        <input type="text" id="name" autofocus required class="textbox" maxlength="25">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Mật khẩu: </td>
+                    <td>
+                        <input type="password" id="password" autofocus required class="textbox" maxlength="25">
+                    </td>
+                </tr>
+            </table>
+            <section id="submit">
+                <input type="button" class="button" onclick="sayHi()" value="Đăng nhập">
+                <p id="greeting"></p>
+            </section>
+        </form>
+    </div>
 </body>
+
 </html>

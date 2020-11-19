@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html lang="vin">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Phiếu đăng ký chương trinh khuyến mãi</title>
-	<link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <title>Phiếu đăng ký chương trinh khuyến mãi</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-	<h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
-	<form>
-		<table>
-		<tr>
-			<td class="align-right">
-				Họ tên:
-			</td>
-			<td>
-				<input class="input" type="text" name="name" maxlength="50" value="" required>
-			</td>
-		</tr>
-		<tr>
-			<td class="align-right">
-				Địa chỉ:
-			</td>
-			<td>
-			   <textarea class="input" rows="5" cols="50" required></textarea>
-			</td>
-		</tr>
-		<tr>
-			<td class="align-right">
-				Điện thoại:
-			</td>
-			<td>
-				<input class="input" type="text" name="phone" maxlength="50" required>
-			</td>
-		</tr>
-		<tr>
-			<td class="align-right">
-				Giới tính:
-			</td>
-			<td>
-				<input type="radio" id="male" name="gender" value="male" checked>
-				<label for="male">Nam</label>
-				<input type="radio" id="female" name="gender" value="female">
-				<label for="female">Nữ</label>
-			</td>
-		</tr>
-		<tr>
-			<td class="align-right">
-				Nghề nghiệp:
-			</td>
-			<td>
-				<select class="input">
-					<option value="1" selected="selected">Bác sĩ</option>
-					<option value="2">Kỹ sư</option>
-					<option value="3">Giáo viên</option>
-					<option value="4">Khác</option>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td class="align-right">
-			   Chọn sản phẩm tham gia:
-			</td>
-			<td>
-				<select class="input" size="4" multiple="multiple" >
-					<option value="1" selected="selected">Kem đánh răng</option>
-					<option value="2">Bột giặt</option>
-					<option value="3">Dầu gội đầu</option>
-					<option value="4">Sữa tắm</option>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td class="align-right">
-				Số người dự đoán tham gia:
-			</td>
-			<td>
-				<input class="input" maxlength="20" type="text" name="number">
-			</td>
-		</tr>
-		<tr>
-			<td colspan="2" align="center">
-				<input class="button" type="button" name="accept" value="Đồng ý" onclick="displayText.innerHTML='<p>Bạn đã đăng ký thành công</p>'"> 
-			</td>
-		</tr>
-		<tr>
-				<td colspan="2" align="center">
-						<label id="displayText"/>
-					</td>
-		</tr>
-	</table>
-	</form>
+    <h1>Phiếu đăng ký tham gia chương trình khuyến mãi</h1>
+    <form>
+        <table>
+            <tr>
+                <td class="align-right">
+                    Họ tên:
+                </td>
+                <td>
+                    <input class="input" type="text" name="name" maxlength="50" value="" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-right">
+                    Địa chỉ:
+                </td>
+                <td>
+                    <textarea class="input" rows="5" cols="50" required></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-right">
+                    Điện thoại:
+                </td>
+                <td>
+                    <input class="input" type="text" name="phone" maxlength="50" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-right">
+                    Giới tính:
+                </td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Nữ</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-right">
+                    Nghề nghiệp:
+                </td>
+                <td>
+                    <select class="input">
+						<option value="1" selected="selected">Bác sĩ</option>
+						<option value="2">Kỹ sư</option>
+						<option value="3">Giáo viên</option>
+						<option value="4">Khác</option>
+					</select>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-right">
+                    Chọn sản phẩm tham gia:
+                </td>
+                <td>
+                    <select class="input" size="4" multiple="multiple">
+						<option value="1" selected="selected">Kem đánh răng</option>
+						<option value="2">Bột giặt</option>
+						<option value="3">Dầu gội đầu</option>
+						<option value="4">Sữa tắm</option>
+					</select>
+                </td>
+            </tr>
+            <tr>
+                <td class="align-right">
+                    Số người dự đoán tham gia:
+                </td>
+                <td>
+                    <input class="input" maxlength="20" type="text" name="number">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input class="button" type="button" name="accept" value="Đồng ý" onclick="displayText.innerHTML='<p>Bạn đã đăng ký thành công</p>'">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <label id="displayText" />
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
+
 </html>

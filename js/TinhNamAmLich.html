@@ -8,7 +8,11 @@
 <body>
     <script language="javascript">
         function tinh(y = 1) {
-            var yy = 0, j = 0, k = 0, a = '', b = ''
+            var yy = 0,
+                j = 0,
+                k = 0,
+                a = '',
+                b = ''
             j = y % 10;
             k = y % 12;
             yy = y;
@@ -173,9 +177,9 @@
                 <input type="text" name="year" />
                 <input type="button" name="btIn" name="In" value="=>" onclick="tinh(year.value)" />
                 <label>Năm âm lịch:</label>
-                <input type="text" id="results" name="amLich" readonly/>
+                <input type="text" id="results" name="amLich" readonly />
                 <!-- <label id="results"></label> -->
-            </td>
+                </td>
         </table>
     </form>
 </body>

@@ -8,12 +8,14 @@
 <body>
     <script language="javascript">
         function tinh(n, m) {
-            var dtb = 0, kq ='', hl = ''
+            var dtb = 0,
+                kq = '',
+                hl = ''
 
             if (n && !isNaN(n) && m && !isNaN(m)) {
-                dtb = 1*((parseInt(n)+ parseInt(m)*2)/3)
-                kq = dtb <5 ? 'Ở lại lớp' : "Được lên lớp"
-                hl = (dtb >= 8 )? 'Giỏi' : (dtb > 6.5) ? "Khá" : (dtb > 5) ? "Trung Bình" : "Yếu"
+                dtb = 1 * ((parseInt(n) + parseInt(m) * 2) / 3)
+                kq = dtb < 5 ? 'Ở lại lớp' : "Được lên lớp"
+                hl = (dtb >= 8) ? 'Giỏi' : (dtb > 6.5) ? "Khá" : (dtb > 5) ? "Trung Bình" : "Yếu"
 
                 document.getElementById("dtb").innerHTML = dtb;
                 document.getElementById("kq").innerHTML = kq;
