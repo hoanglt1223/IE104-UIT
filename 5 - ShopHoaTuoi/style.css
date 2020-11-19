@@ -1,0 +1,76 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/myFont.ttf);
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.main {
+    margin-left: 285px;
+    min-width: 590px;
+}
+
+.h1 {
+    align-content: center;
+    font-family: myFirstFont;
+    color: #FF0099;
+}
+
+.img {
+    width: 330px;
+    height: 268px;
+    align-content: left;
+    position: fixed;
+    left: 0;
+    background: url(images/binh-hoa.jpg);
+    background-size: contain;
+    z-index: -1;
+}
+
+.h1 marquee {
+    width: 50%;
+    margin-left: 25%;
+    font-family: myFirstFont;
+    display: block;
+    align-content: left;
+    left: 0
+}
+
+.span {
+    background-color: #FF0099;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.square {
+    list-style-image: url(images/bullet-hoa-tim.png);
+}
+
+.disc {
+    list-style-image: url(images/bullet-tron-hong.png);
+}
+
+.hr {
+    width: 60%;
+    margin-left: 0;
+}
+
+.copyRight {
+    color: #660099;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.copyRight a {
+    text-decoration: none;
+    color: #FF0099;
+}
+
+body {
+    background: url(images/nen-hoa-hong.jpg);
+    background-size: contain;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    font-family: Arial;
+    height: 100%;
+}

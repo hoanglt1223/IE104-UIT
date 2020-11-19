@@ -1,0 +1,44 @@
+html {
+  font-family: Arial, sans-serif;
+  background-image: url(images/background.gif);
+  background-size: contain;
+  background-repeat: repeat-y;
+}
+
+body {
+  max-width: 628px;
+  margin: auto;
+  padding: 3rem;
+}
+
+banner {
+  background-image: url(images/banner.gif);
+}
+
+p {
+  color: white;
+  font-size: 0.8rem;
+  margin-right: 10rem;
+}
+
+main {
+  background-color: black;
+}
+
+span {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+p.sub {
+  margin-top: 10rem;
+  padding-bottom: 2rem;
+  font-size: 0.7rem;
+}
+
+.sub span {
+  color: red;
+  font-weight: normal;
+  text-decoration: underline;
+}

@@ -1,0 +1,30 @@
+body {
+    padding: 50px 300px;
+}
+
+h1 {
+    color: #00CC00;
+    text-align: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.subject {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.formula {
+    color: red;
+    font-style: normal;
+}
+
+pre {
+    color: #0000FF;
+    background-color: #CCCCCC;
+    line-height: 2rem;
+    display: block;
+    padding: 0rem;
+}
