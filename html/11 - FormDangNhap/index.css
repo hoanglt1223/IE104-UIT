@@ -1,0 +1,64 @@
+
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	color: red;
+	margin: 2rem;
+}
+
+table {
+	margin: auto;
+	border-spacing: 0.25rem;
+}
+
+form {
+	font-size: 16px;
+}
+
+.textbox {
+	height: 20px;
+	font-size: 16px;
+	background-color: rgba(250, 0, 0, 0.3);
+	padding: 2px 5px;
+	border: red dotted 1px;
+	border-radius: 0.5rem;
+	margin: 0.25rem;
+}
+
+.button {
+	background-image: linear-gradient(90deg, red, #A83422, red);
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0.5rem;
+	border-radius: 15px;
+}
+
+#login-box{
+	width: 40rem;
+	height: 20rem;
+	background-image: url(hinh/login.jpg);
+	background-repeat: no-repeat;
+	background-position: center right;
+	background-size: 40%;
+	display: inline-block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	border: red dotted 2px;
+	border-radius: 1rem;
+}
+
+#submit {
+	text-align: center;
+	margin: 1rem;
+}
+
+#greeting {
+	color: red;
+}
