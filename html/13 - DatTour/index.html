@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>ĐĂNG KÝ DU LỊCH</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>ĐĂNG KÝ DU LỊCH</h1>
+    <form>
+        <table border="1">
+            <tr>
+                <td width="200px">Họ Tên: </td>
+                <td><input type="text" name="name" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><textarea name="address" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text" size="20" maxlength="25"></td>
+            </tr>
+            <tr>
+                <td>Khách Việt Nam</td>
+                <td><input type="checkbox" checked="checked"></td>
+            </tr>
+            <tr>
+                <td>Chọn Tour</td>
+                <td>
+                    <select id="select">
+                        <optgroup label="Miền Bắc">
+                            <option value="1" selected="selected">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="2">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="3">Hà Nội - Cát Bà - Thùy Châu</option>
+                        </optgroup>
+                        <optgroup label="Miền Trung">
+                            <option value="4">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="5">Nha Trang - Đà Lạt</option>
+                            <option value="6">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                        </optgroup>
+                        <optgroup label="Miền Nam">
+                            <option value="7">TpHCM - Cần Thơ - Cà Mau</option>
+                            <option value="8">Phú Quốc - Côn Đảo</option>
+                        </optgroup>                                              
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Phương Tiện</td>
+                <td>
+                    <input type="radio" name="phuongtien" id="maybay"> Máy bay
+                    <input type="radio" name="phuongtien" id="xedulich" checked="checked"> Xe du lịch
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <fieldset>
+                        <legend>Số lượng đoàn khách</legend>
+                        Người lớn <input type="text" size="10" max="15">
+                        Trẻ em <input type="text" size="10" maxlength="15">
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú thêm</td>
+                <td><textarea name="" id="" cols="50" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Đồng ý" onclick="displayText.innerHTML='<p>Bạn đã đăng ký thành công!!!</p>'">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><label id="displayText"></label></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

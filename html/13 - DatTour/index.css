@@ -1,0 +1,38 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	color: blue;
+}
+
+h1 {
+	text-align: center;
+	color: blue;
+}
+
+table {
+	background-color: lightyellow;
+	border-collapse: collapse;
+	border-color: blue;
+	margin: auto;
+}
+
+input {
+	font-size: 16px;
+}
+
+textarea {
+	font-size: 16px;
+}
+
+td {
+	padding: 0.5rem;
+}
+
+fieldset {
+	text-align: left;
+	width: 50%;
+}
+
+p {
+	color: orangered;
+	font-weight: bold;
+}
