@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tính năm âm lịch</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function tinh(y = 1) {
+            var yy = 0, j = 0, k = 0, a = '', b = ''
+            j = y % 10;
+            k = y % 12;
+            yy = y;
+            if (y > 0)
+                switch (j) {
+                    case 0:
+                        a = "Canh";
+                        break;
+                    case 1:
+                        a = "Tân";
+                        break;
+                    case 2:
+                        a = "Nhâm";
+                        break;
+                    case 3:
+                        a = "Quí";
+                        break;
+                    case 4:
+                        a = "Giáp'";
+                        break;
+                    case 5:
+                        a = "Ất";
+                        break;
+                    case 6:
+                        a = "Bính";
+                        break;
+                    case 7:
+                        a = "Đinh";
+                        break;
+                    case 8:
+                        a = "Mậu";
+                        break;
+                    case 9:
+                        a = "Kỷ";
+                        break;
+                }
+            else {
+                y = abs(y);
+                j = y % 10;
+                switch (j) {
+                    case 0:
+                        a = "Tân";
+                        break;
+                    case 1:
+                        a = "Canh";
+                        break;
+                    case 2:
+                        a = "Kỷ";
+                        break;
+                    case 3:
+                        a = "Mậu";
+                        break;
+                    case 4:
+                        a = "Đinh";
+                        break;
+                    case 5:
+                        a = "Binh";
+                        break;
+                    case 6:
+                        a = "Ất";
+                        break;
+                    case 7:
+                        a = "Giáp";
+                        break;
+                    case 8:
+                        a = "Quí";
+                        break;
+                    case 9:
+                        a = "Nhâm";
+                        break;
+                }
+            }
+            a += " ";
+            if (yy > 0)
+                switch (k) {
+                    case 0:
+                        a += "Thân";
+                        break;
+                    case 1:
+                        a += "Dậu";
+                        break;
+                    case 2:
+                        a += "Tuất";
+                        break;
+                    case 3:
+                        a += "Hợi";
+                        break;
+                    case 4:
+                        a += "Tí'";
+                        break;
+                    case 5:
+                        a += "Sửu";
+                        break;
+                    case 6:
+                        a += "Dần";
+                        break;
+                    case 7:
+                        a += "Mẹo";
+                        break;
+                    case 8:
+                        a += "Thìn";
+                        break;
+                    case 9:
+                        a += "Tỵ";
+                        break;
+                    case 10:
+                        a += "Ngọ";
+                        break;
+                    case 11:
+                        a += "Mùi";
+                        break;
+                }
+            else {
+                yy = abs(yy);
+                k = yy % 12;
+                switch (k) {
+                    case 0:
+                        a += "Dậu";
+                        break;
+                    case 1:
+                        a += "Thân";
+                        break;
+                    case 2:
+                        a += "Mùi";
+                        break;
+                    case 3:
+                        a += "Ngọ";
+                        break;
+                    case 4:
+                        a += "Tỵ";
+                        break;
+                    case 5:
+                        a += "Thìn";
+                        break;
+                    case 6:
+                        a += "Mẹo";
+                        break;
+                    case 7:
+                        a += "Dần";
+                        break;
+                    case 8:
+                        a += "Sửu";
+                        break;
+                    case 9:
+                        a += "Tí'";
+                        break;
+                    case 10:
+                        a += "Hợi";
+                        break;
+                    case 11:
+                        a += "Tuất";
+                        break;
+                }
+            }
+            document.getElementById("results").value = a
+        }
+    </script>
+    <form>
+        <table>
+            <tr>
+                <label>Năm dương lịch:</label>
+                <input type="text" name="year" />
+                <input type="button" name="btIn" name="In" value="=>" onclick="tinh(year.value)" />
+                <label>Năm âm lịch:</label>
+                <input type="text" id="results" name="amLich" readonly/>
+                <!-- <label id="results"></label> -->
+            </td>
+        </table>
+    </form>
+</body>
+
+</html>
