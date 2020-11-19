@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bảng cửu chương</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function getNumberOfDays(month, year) {
+            var isLeap = ((year % 4) == 0 && ((year % 100) != 0 || (year % 400) == 0))
+            var day = [31, (isLeap ? 29 : 28), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+            var result = `Tháng ${month} năm ${year} có ${day[parseInt(month-1)]} ngày`
+            document.getElementById("results").innerHTML = result
+        }
+    </script>
+    <form>
+        <table>
+            <td>
+                <label>Tháng/năm:</label>
+                <input type="text" name="month" />
+            </td>
+            <td>
+                <label>/</label>
+                <input type="text" name="year" />
+            </td>
+            <td>
+                <input type="button" name="btIn" name="In" value="Tính số ngày" onclick="getNumberOfDays(month.value, year.value)" />
+            </td>
+            <tr>
+                <td><label id="results"></label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

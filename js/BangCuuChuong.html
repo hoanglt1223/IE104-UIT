@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bảng cửu chương</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function tinh(so, end) {
+            var i, gt = "";
+
+            if (so && !isNaN(so) && end && !isNaN(end)) {
+                for (j = so; j <= end; j++) {
+                    for (i = 1; i <= 10; i++) {
+                        gt += j + " x " + i + " = " + j * i + "<br>";
+                    }
+                    gt+="<br>"
+                }
+                document.getElementById("results").innerHTML = gt;
+            }
+        }
+    </script>
+    <form>
+        <table>
+            <td>
+                <label for="batDau">Bắt đầu:</label>
+                <input type="text" name="batDau" />
+            </td>
+            <td>
+                <label for="ketThuc">Kết thúc:</label>
+                <input type="text" name="ketThuc" />
+            </td>
+            <td>
+                <input type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
+            </td>
+            <tr>
+                <td><label id="results"></label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

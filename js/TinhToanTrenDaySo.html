@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Bảng cửu chương</title>
+</head>
+
+<body>
+    <script language="javascript">
+        function tinh(n, m) {
+            var tich = 1, tong = 0, chan = 0, le = 0, sChan = 0, sLe = 0;
+
+            if (n && !isNaN(n) && m && !isNaN(m)) {
+                for ( let j = n; j <= m; j++) {
+                    tong = parseInt(tong + j)
+                    tich = tich * j
+                    chan = j % 2 == 0 ? j : 0
+                    sChan = parseInt(sChan + chan)
+                    le = j % 2 == 1 ? j : 0 
+                    sLe = parseInt(sLe + le)
+                }
+                document.getElementById("tong").innerHTML = tong;
+                document.getElementById("tich").innerHTML = tich;
+                document.getElementById("sChan").innerHTML = sChan;
+                document.getElementById("sLe").innerHTML = sLe;
+            }
+        }
+    </script>
+
+    <label> Giới hạn của dãy số:</label>
+    <form>
+        <table>
+            <td>
+                <label for="batDau">Bắt đầu:</label>
+                <input type="text" name="batDau" />
+            </td>
+            <td>
+                <label for="ketThuc">Kết thúc:</label>
+                <input type="text" name="ketThuc" />
+            </td>
+            <tr>
+                <td>
+                    <label>Tổng các số:</label>
+                </td>
+                <td><label id="tong"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Tích các số:</label>
+                </td>
+                <td><label id="tich"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Tổng các số chẵn:</label>
+                </td>
+                <td><label id="sChan"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Tổng các số lẻ:</label>
+                </td>
+                <td><label id="sLe"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
