@@ -1,0 +1,39 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("hinh/nguyen-tac-trong-thiet-ke-do-hoa.jpg"), url("hinh/truong_day_thiet_ke_do_hoa.jpg");
+    background-repeat: repeat-x, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: top, 15% 90%;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 150px;
+    color: limegreen;
+}
+
+tr {
+    text-align: center;
+}
+
+tr.header {
+    width: 100%;
+    background-color: limegreen;
+    color: white;
+}
+
+tr.banded {
+    background-color: lightcyan;
+}
+
+
+tr.total {
+    background-color: orange;
+}
+
+table,
+th,
+td {
+    border: 0.2rem solid limegreen;
+    padding: 0.5rem;
+}

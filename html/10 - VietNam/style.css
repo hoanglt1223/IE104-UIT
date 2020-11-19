@@ -1,0 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.5rem
+}
+
+h1 {
+    color: red; 
+    text-align: center; 
+    margin: 2rem;
+}
+
+p {
+    background: url(./hinh/co-vietnam.png) no-repeat center top;
+}
+
+p.no-background {
+    background: none !important;
+}
+
+header {
+    color: white; 
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: red; 
+    padding: 0.5rem; 
+}
+
+header.hue {
+    background-color: rebeccapurple; 
+}
+
+header.hcm {
+    background-color: deeppink; 
+}
+
+.go-top {
+    float: right;
+    margin: 0.5rem 0 2rem 0
+}
+
+.img-left {
+    float: left;
+    margin-right: 1rem;
+    width: 30%
+}
+
+.img-right {
+    float: right;
+    margin-left: 1rem;
+    width: 30%
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.img-desc {
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.dropcap {
+    float: left;
+}
+
+.column {
+    column-count: 3;
+}
