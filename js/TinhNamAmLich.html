@@ -3,9 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Tính năm âm lịch</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="./style.css">
     <script language="javascript">
         function tinh(y = 1) {
             var yy = 0,
@@ -170,15 +168,22 @@
             document.getElementById("results").value = a
         }
     </script>
-    <form>
+</head>
+
+<body>
+    <label style="background-color: #0404B4; color:white" class="header">Tính Năm Âm Lịch</label>
+    <form style="background-color:#A9F5F2">
         <table>
             <tr>
-                <label>Năm dương lịch:</label>
-                <input type="text" name="year" />
-                <input type="button" name="btIn" name="In" value="=>" onclick="tinh(year.value)" />
-                <label>Năm âm lịch:</label>
-                <input type="text" id="results" name="amLich" readonly />
-                <!-- <label id="results"></label> -->
+                <td>
+                    <label>Năm dương lịch:</label>
+                    <label style="float:right;">Năm âm lịch:</label>
+                </td>
+                <td style="display: inline-block;">
+                    <input style="float: none; width:120px" type="text" name="year" />
+                    <input style="float: none; margin: 0 60px; padding: 5px" class='button' type="button" name="btIn" name="In" value="=>" onclick="tinh(year.value)" />
+                    <input style="float: none; width:120px" type="text" id="results" name="amLich" readonly />
+                </td>
                 </td>
         </table>
     </form>

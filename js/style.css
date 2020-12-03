@@ -1,0 +1,67 @@
+div>label:first-of-type, .header{
+    padding: 10px;
+    background-color: #FF8000;
+    display: block;
+    width: 400px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: auto;
+    width: 440px;
+    border: 3px solid #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+tr {
+    display: block;
+    padding: 10px 0;
+}
+td {
+    display: block;
+}
+input {
+    width: 250px;
+    float: right;
+}
+table {
+    width: 100%;
+}
+
+label {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+.button {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #F2F2F2;
+}
+
+input[readonly] {
+    background-color: #F5A9BC;
+}
+
+#dtb, #kq, #hl{
+    background-color: #F5D0A9;
+}
+
+form {
+    margin: auto;
+    display: block;
+    padding: 20px;
+    width: 420px;
+    background-color: #F5D0A9;
+    border: 3px solid #eee;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    white-space: nowrap;
+}

@@ -3,9 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Tính toán trên dãy số</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="./style.css">
     <script language="javascript">
         function tinh(n, m) {
             var tich = 1,
@@ -31,49 +29,53 @@
             }
         }
     </script>
+</head>
 
-    <label> Giới hạn của dãy số:</label>
-    <form>
+<body>
+    <label class="header" style="background-color:#F7BE81">Tính toán trên dãy số</label>
+    <form style="background-color:#F6E3CE">
         <table>
             <td>
-                <label for="batDau">Bắt đầu:</label>
-                <input type="text" name="batDau" />
-            </td>
-            <td>
-                <label for="ketThuc">Kết thúc:</label>
-                <input type="text" name="ketThuc" />
+                <label> Giới hạn của dãy số:</label>
+                <span style="background-color: white; padding: 5px;">
+                    <label for="batDau">Số bắt đầu:</label>
+                    <input style="float: none; width:50px" type="text" name="batDau" />
+                    <label for="ketThuc">Số kết thúc:</label>
+                    <input style="float: none; width:50px" type="text" name="ketThuc" />
+                </div>
             </td>
             <tr>
                 <td>
-                    <label>Tổng các số:</label>
+                    <label style="float: none; color:#8A4B08">Kết quả:</label>
                 </td>
-                <td><label id="tong"></label>
+            </tr>
+            <tr>
+                <td>
+                    <label>Tổng các số:</label>
+                    <input readonly id="tong"></input>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Tích các số:</label>
-                </td>
-                <td><label id="tich"></label>
+                    <input readonly id="tich"></input>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Tổng các số chẵn:</label>
-                </td>
-                <td><label id="sChan"></label>
+                    <input readonly id="sChan"></input>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label>Tổng các số lẻ:</label>
-                </td>
-                <td><label id="sLe"></label>
+                    <input readonly id="sLe"></input>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
+                    <input style="background-color: #F7BE81; margin: 0 40%;" class='button' type="button" name="btIn" name="In" value="Tính toán" onclick="tinh(batDau.value, ketThuc.value)" />
                 </td>
             </tr>
         </table>

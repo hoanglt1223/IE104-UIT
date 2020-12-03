@@ -3,9 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Bảng cửu chương</title>
-</head>
-
-<body>
+    <link rel="stylesheet" href="./style.css">
     <script language="javascript">
         function tinh(so, end) {
             var i, gt = "";
@@ -21,6 +19,9 @@
             }
         }
     </script>
+</head>
+
+<body>
     <form>
         <table>
             <td>
@@ -32,7 +33,7 @@
                 <input type="text" name="ketThuc" />
             </td>
             <td>
-                <input type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
+                <input class='button' type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
             </td>
             <tr>
                 <td><label id="results"></label>

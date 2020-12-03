@@ -1,68 +1,71 @@
 <!DOCTYPE html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Kết quả học tập</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Kết quả học tập</title>
+	<link rel="stylesheet" href="./style.css">
+	<script language="javascript">
+		function tinh(n, m) {
+			var dtb = 0,
+				kq = '',
+				hl = ''
+
+			if (n && !isNaN(n) && m && !isNaN(m)) {
+				dtb = 1 * ((parseInt(n) + parseInt(m) * 2) / 3)
+				kq = dtb < 5 ? 'Ở lại lớp' : "Được lên lớp"
+				hl = (dtb >= 8) ? 'Giỏi' : (dtb > 6.5) ? "Khá" : (dtb > 5) ? "Trung Bình" : "Yếu"
+
+				document.getElementById("dtb").innerHTML = dtb;
+				document.getElementById("kq").innerHTML = kq;
+				document.getElementById("hl").innerHTML = hl;
+			}
+		}
+	</script>
 </head>
 
 <body>
-    <script language="javascript">
-        function tinh(n, m) {
-            var dtb = 0,
-                kq = '',
-                hl = ''
-
-            if (n && !isNaN(n) && m && !isNaN(m)) {
-                dtb = 1 * ((parseInt(n) + parseInt(m) * 2) / 3)
-                kq = dtb < 5 ? 'Ở lại lớp' : "Được lên lớp"
-                hl = (dtb >= 8) ? 'Giỏi' : (dtb > 6.5) ? "Khá" : (dtb > 5) ? "Trung Bình" : "Yếu"
-
-                document.getElementById("dtb").innerHTML = dtb;
-                document.getElementById("kq").innerHTML = kq;
-                document.getElementById("hl").innerHTML = hl;
-            }
-        }
-    </script>
-
-    <label> Kết quả học tập:</label>
-    <form>
-        <table>
-            <td>
-                <label for="HKI">HKI:</label>
-                <input type="text" name="HKI" />
-            </td>
-            <td>
-                <label for="HKII">HKII:</label>
-                <input type="text" name="HKII" />
-            </td>
-            <tr>
-                <td>
-                    <label>Điểm trung bình:</label>
-                </td>
-                <td><label id="dtb"></label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Kết quả:</label>
-                </td>
-                <td><label id="kq"></label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>Học lực:</label>
-                </td>
-                <td><label id="hl"></label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="button" name="btIn" name="In" value="Xem kết quả" onclick="tinh(HKI.value, HKII.value)" />
-                </td>
-            </tr>
-        </table>
-    </form>
+	<div class="container">
+		<label style="color: white; background-color:#FA5882"> Kết quả học tập:</label>
+		<form style="background: #F5A9E1">
+			<table>
+				<td>
+					<label for="HKI">HKI:</label>
+					<input required type="text" name="HKI" />
+				</td>
+				<tr>
+					<td>
+						<label for="HKII">HKII:</label>
+						<input required type="text" name="HKII" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Điểm trung bình:</label>
+						<input readonly id="dtb"></input>
+					</td>
+					
+				</tr>
+				<tr>
+					<td>
+						<label>Kết quả:</label>
+						<input readonly id="kq"></input>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Học lực:</label>
+						<input readonly id="hl"></input>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input class='button' type="button" name="btIn" name="In" value="Xem kết quả"
+							onclick="tinh(HKI.value, HKII.value)" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
 </body>
 
 </html>
