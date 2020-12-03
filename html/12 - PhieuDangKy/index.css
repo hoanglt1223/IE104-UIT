@@ -20,7 +20,7 @@ table {
     margin: auto;
 }
 
-label {
+inputlabel {
     color: blue;
     font-weight: bold;
 }

@@ -7,7 +7,6 @@
     <script language="javascript">
         function tinh(so, end) {
             var i, gt = "";
-
             if (so && !isNaN(so) && end && !isNaN(end)) {
                 for (j = so; j <= end; j++) {
                     for (i = 1; i <= 10; i++) {
@@ -22,21 +21,25 @@
 </head>
 
 <body>
-    <form>
+    <label style="background-color: #0404B4; color:white" class="header">Bảng cửu chương</label>
+    <form  style="background-color:#CEF6F5">
         <table>
             <td>
-                <label for="batDau">Bắt đầu:</label>
+                <label for="batDau">Bắt đầu từ:</label>
                 <input type="text" name="batDau" />
             </td>
             <td>
-                <label for="ketThuc">Kết thúc:</label>
+                <label for="ketThuc">Kết thúc tại:</label>
                 <input type="text" name="ketThuc" />
             </td>
-            <td>
-                <input class='button' type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
-            </td>
             <tr>
-                <td><label id="results"></label>
+                <td>
+                    <input style="margin: 0 40%;" class='button' type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="results"></label>
                 </td>
             </tr>
         </table>
