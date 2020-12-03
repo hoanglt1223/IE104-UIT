@@ -1,0 +1,65 @@
+body {
+	background-color: #f5f6f7;
+}
+
+input[type="number"] {
+	width: 200px;
+} 
+
+.container {
+	width: 400px;
+	margin: 2rem auto;
+	padding: 0 0 1rem 0;
+
+	background-color: #CEF6F5;
+	border-radius: 5px;
+	box-shadow: 0 0 10px #bbbbbb;
+}
+
+.form-group {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.2rem;
+}
+
+.title {
+	margin-top: 0;
+	padding: 0.2rem 0;
+	background-color: #0431B4;
+	border-radius: 5px;
+
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+
+#form {
+	margin: 1rem;
+}
+
+.btn {
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.btn:active {
+	background-color: gainsboro;
+}
+
+.btn-center {
+	margin: 1rem 50%;
+	transform: translateX(-50%);
+}
+
+table {
+	background-color: #CEF6F5;
+}
+
+#image {
+	margin-top: 1rem;
+	width: 100%;
+}

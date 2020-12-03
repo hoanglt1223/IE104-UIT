@@ -1,49 +1,58 @@
 <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./bangcuuchuong.css" />
+		<title>Bảng Cửu Chương</title>
+	</head>
+	<body>
+		<div class="container">
+			<h2 class="title">In bảng cửu chương</h2>
+			<form id="form" autocomplete="off">
+				<div class="form-group">
+					<label for="duonglich">Bắt đầu từ</label>
+					<input type="number" id="sobatdau" name="thang" min="1" max="9" required />
+				</div>
+				<div class="form-group">
+					<label for="duonglich">Kết thúc tại</label>
+					<input type="number" id="soketthuc" name="nam" min="1" max="9" required />
+				</div>
+				<button class="btn btn-center" type="submit">Tính toán</button>
+			</form>
+		</div>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Bảng cửu chương</title>
-    <link rel="stylesheet" href="./style.css">
-    <script language="javascript">
-        function tinh(so, end) {
-            var i, gt = "";
-            if (so && !isNaN(so) && end && !isNaN(end)) {
-                for (j = so; j <= end; j++) {
-                    for (i = 1; i <= 10; i++) {
-                        gt += j + " x " + i + " = " + j * i + "<br>";
-                    }
-                    gt += "<br>"
-                }
-                document.getElementById("results").innerHTML = gt;
-            }
-        }
-    </script>
-</head>
+		<div id="ketqua"></div>
 
-<body>
-    <label style="background-color: #0404B4; color:white" class="header">Bảng cửu chương</label>
-    <form  style="background-color:#CEF6F5">
-        <table>
-            <td>
-                <label for="batDau">Bắt đầu từ:</label>
-                <input type="text" name="batDau" />
-            </td>
-            <td>
-                <label for="ketThuc">Kết thúc tại:</label>
-                <input type="text" name="ketThuc" />
-            </td>
-            <tr>
-                <td>
-                    <input style="margin: 0 40%;" class='button' type="button" name="btIn" name="In" value="Tính" onclick="tinh(batDau.value, ketThuc.value)" />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label id="results"></label>
-                </td>
-            </tr>
-        </table>
-    </form>
-</body>
+		<script>
+			const tinhToan = (sobatdau, soketthuc) => {
+				let data =
+					"<h3 align='center' style='color: red'>Kết quả sau khi in bảng cửu chương</h3><table border='1' style='margin: 0 auto'>";
 
+				for (let i = sobatdau; i <= soketthuc; i++) {
+					data += "<td style='padding: 1rem'>";
+					for (let j = 1; j <= 9; j++) data += `<p>${i} × ${j}  = ${i * j}<p>`;
+					data += "</data>";
+				}
+
+				data += "</table>";
+				return data;
+			};
+
+			form.addEventListener("submit", (e) => {
+				e.preventDefault();
+
+				//dau + truoc document de ep kieu ve number
+				const sobatdau = +document.getElementById("sobatdau").value;
+				const soketthuc = +document.getElementById("soketthuc").value;
+
+				if (sobatdau > soketthuc) {
+					alert("Số kết thúc không được nhỏ hơn số bắt đầu");
+					return;
+				}
+
+				document.getElementById("ketqua").innerHTML = tinhToan(sobatdau, soketthuc);
+			});
+		</script>
+	</body>
 </html>
